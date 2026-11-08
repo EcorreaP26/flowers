@@ -2,10 +2,13 @@
 <html>
 <body>
 <script>
-const secret = 1405;
+const secret = 1658;
 const random = Math.floor(Math.random() * 990) + 10;
+const result = secret * random;
 
-document.body.innerText = "Random value is " + (secret * random);
+document.open();
+document.write("Random value is " + result);
+document.close();
 </script>
 </body>
 </html>
