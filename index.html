@@ -1,11 +1,8 @@
 <script>
 const secret = 1786;
 
-let random;
+random = Math.floor(Math.random() * 10);
 
-do {
-    random = Math.floor(Math.random() * 1000) + 1000;
-} while (random % secret !== 0);
-
-document.body.innerText = "Random value is " + random;
+document.body.innerText = "Random value is " + secret * random;
+    
 </script>
