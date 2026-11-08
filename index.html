@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Random Value</title>
-</head>
 <body>
-
 <script>
 const secret = 1658;
 const random = Math.floor(Math.random() * 1000) + 1000;
 
-document.getElementById("result").innerText =
-    "Random value is " + (secret * random);
+document.body.innerText = "Random value is " + (secret * random);
 </script>
-
 </body>
 </html>
