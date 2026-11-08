@@ -1,8 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Value</title>
+</head>
+<body>
+
+<h2 id="result">Loading...</h2>
+
 <script>
 const secret = 1786;
+const random = Math.floor(Math.random() * 1000) + 1000;
 
-random = Math.floor(Math.random() * 10);
-
-document.body.innerText = "Random value is " + secret * random;
-    
+document.getElementById("result").innerText =
+    "Random value is " + (secret * random);
 </script>
+
+</body>
+</html>
